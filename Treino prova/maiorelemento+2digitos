@@ -1,0 +1,13 @@
+function MaiorElemento() {
+    var prop = prompt('digite a sua matriz')
+    var matriz = prop.split(",").map(Number)  
+    var maiorElemento = matriz[0];
+
+    for (var i = 1; i < matriz.length; i++) {
+        if (matriz[i] > maiorElemento) {
+            maiorElemento = matriz[i];
+        }
+    }
+
+    alert(maiorElemento)
+}
